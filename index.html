@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ENOUGH</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e5e5e5;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 700; color: #fff; margin: 32px 0 12px; }
+    p { color: #ccc; margin-bottom: 12px; font-size: 15px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { color: #ccc; font-size: 15px; margin-bottom: 6px; }
+    a { color: #e8272a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { border: none; border-top: 1px solid #222; margin: 40px 0; }
+    .star { color: #e8272a; margin-right: 6px; }
+    strong { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><span class="star">✦</span>ENOUGH</h1>
+    <p class="subtitle">Privacy Policy &mdash; Last updated: April 20, 2026</p>
+
+    <p>ENOUGH ("we", "our", or "us") is a mobile application designed to support individuals working through gambling and trading impulse control. This Privacy Policy describes what data we collect, how we use it, and the third-party services we rely on.</p>
+
+    <p>We believe in transparency. We collect only what the app needs to function, and we never sell your data.</p>
+
+    <hr class="divider" />
+
+    <h2>1. Who We Are</h2>
+    <p>ENOUGH is operated as an independent publication by Sofiia Zelinska. Contact: <a href="mailto:sofiiacreator@gmail.com">sofiiacreator@gmail.com</a>.</p>
+
+    <h2>2. No Account Required</h2>
+    <p>You do not create an account to use ENOUGH. When you first open the app, we use <strong>Firebase Anonymous Authentication</strong> to generate a random anonymous user ID. This ID is not linked to your name, email, phone number, or any real-world identity.</p>
+
+    <h2>3. Data We Store</h2>
+    <p>The following information is stored on Firebase Realtime Database under your anonymous user ID:</p>
+    <ul>
+      <li><strong>Display name (username)</strong> — a nickname you choose. It does not need to be your real name.</li>
+      <li><strong>Addiction focus</strong> — the category you select during onboarding (e.g., gambling, trading).</li>
+      <li><strong>Progress data</strong> — clean streak count, best streak record, start date, total session count.</li>
+      <li><strong>Session content</strong> — messages from AI guide conversations and anonymous group chats. This content is stored to keep your chat history available across app launches. You can request deletion at any time by emailing us (see Section 9).</li>
+      <li><strong>Moderation status</strong> — if you violate community rules in group chats (e.g., harassment), an automated system records a violation counter linked to your anonymous user ID to enforce mutes or bans. No content of your messages is sent to a human moderator.</li>
+    </ul>
+
+    <h2>4. Data Stored Only On Your Device</h2>
+    <p>The following is stored locally via AsyncStorage and never leaves your device:</p>
+    <ul>
+      <li>App preferences (theme, language, notification toggles, haptics)</li>
+      <li>Daily AI/group session counters (for free-tier limits)</li>
+      <li>Subscription plan cached from RevenueCat</li>
+    </ul>
+
+    <h2>5. AI Guide Feature</h2>
+    <p>ENOUGH offers an AI-powered guide. When you send a message to the AI, the message is transmitted to <strong>Anthropic's Claude API</strong> to generate a response. Anthropic's API terms state that API data is not used to train their models by default. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</p>
+    <p>AI conversation messages are also saved in Firebase under your anonymous user ID so you can review past sessions. You can request deletion at any time.</p>
+
+    <h2>6. Subscriptions and Payments</h2>
+    <p>Subscription purchases (ENOUGH Plus) are processed entirely by <strong>Apple App Store</strong> or <strong>Google Play</strong>. We never see or store your payment card details. We use <strong>RevenueCat</strong> to verify subscription status across devices. RevenueCat may store your anonymous user ID and a subscription receipt. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</p>
+
+    <h2>7. Notifications</h2>
+    <p>If you grant notification permission, the app schedules <strong>local reminders</strong> on your device using Expo Notifications (streak reminders, morning/evening check-ins). These are scheduled locally on your device — we do not send your data to a push notification server and we do not track whether you open them.</p>
+
+    <h2>8. Third-Party Services</h2>
+    <p>ENOUGH uses the following service providers:</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Anonymous Auth, Realtime Database) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></li>
+      <li><strong>Anthropic</strong> (Claude API for AI chat) — <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic Privacy</a></li>
+      <li><strong>RevenueCat</strong> (subscription management) — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy</a></li>
+      <li><strong>Expo</strong> (build/distribution platform) — <a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy</a></li>
+      <li><strong>Apple App Store / Google Play</strong> (distribution and payments)</li>
+    </ul>
+    <p>We do not use analytics, crash reporting, advertising SDKs, or tracking tools.</p>
+
+    <h2>9. Your Rights & Data Deletion</h2>
+    <p>You can:</p>
+    <ul>
+      <li><strong>Delete your data</strong> — email us at <a href="mailto:sofiiacreator@gmail.com">sofiiacreator@gmail.com</a> and share your anonymous user ID (visible in Settings once this feature ships). We will delete all data associated with it within 30 days.</li>
+      <li><strong>Uninstall the app</strong> — if you uninstall, your local data is removed. Your Firebase data remains under a random anonymous ID that no one can trace back to you, but you can still request its deletion as above.</li>
+      <li><strong>Disable notifications</strong> — through your device's system settings.</li>
+    </ul>
+
+    <h2>10. Data Security</h2>
+    <p>All data is transmitted over HTTPS. Firebase security rules are configured so that each anonymous user can only read and write their own data. Subscription status is verified server-side through RevenueCat.</p>
+
+    <h2>11. Age Restriction</h2>
+    <p>ENOUGH is intended for users <strong>18 years of age or older</strong>, because it addresses recovery from gambling and trading impulse patterns. We do not knowingly collect data from minors. If you believe a minor has used the app, please contact us and we will remove their data.</p>
+
+    <h2>12. Medical Disclaimer</h2>
+    <p>ENOUGH is not a medical device. It is not a substitute for professional medical, psychological, or financial advice. If you are experiencing a crisis, please contact a qualified professional or an emergency hotline in your region.</p>
+
+    <h2>13. International Users</h2>
+    <p>Firebase servers may store data outside your country of residence. By using ENOUGH, you consent to this transfer. We rely on Google's standard contractual clauses for international data transfers (see Firebase privacy link in Section 8).</p>
+
+    <h2>14. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy. When we do, we will update the "Last updated" date at the top. Material changes will be announced inside the app.</p>
+
+    <h2>15. Contact</h2>
+    <p>Questions? Data requests? Email <a href="mailto:sofiiacreator@gmail.com">sofiiacreator@gmail.com</a>.</p>
+
+    <hr class="divider" />
+    <p style="font-size: 13px; color: #555; text-align: center;">© 2026 ENOUGH. All rights reserved.</p>
+  </div>
+</body>
+</html>
